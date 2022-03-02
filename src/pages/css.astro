@@ -1,0 +1,78 @@
+---
+import imgReference from '../assets/logo.png';
+---
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Claudia" />
+    <meta name="keywords" content="HTML, CSS, Astro" />
+    <title>Especies vegetales de Ideo</title>    
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;600;900&family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <!-- Aquí irá el logo -->
+        <a href="/home">          
+          <img src={imgReference}/>
+        </a>
+      </div>
+      <div id="menu">      
+        <!-- Aquí irá el listado de opciones -->
+        <ul>
+          <li>
+            <a href="/about">Acerca de</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- header -->
+    <!-- ======= Bloque de página ======= -->
+    <div class="main">
+      <h1>Css example</h1>
+
+      <div class="colors">
+        <div class="box color1"></div>
+        <div class="box color2"></div>
+        <div class="box color3"></div>
+        <div class="box color4"></div>
+        <div class="box color5"></div>
+      </div>
+
+      <p class="blog-top">Últimas entradas de mi blog</p>
+      <div class="blog-post">
+        <div class="title">Ejemplo de título</div>
+        <div class="content">
+          <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+        </div>
+      </div>
+    </div>
+    <!-- ======== Pie de página ========= -->
+    <div class="foot">
+      <p>Proyecto para la asignatura de Tecnologías de la Información I de Escuela IDEO</p>
+      <p>Autor de la página: Claudia Ramírez</p>
+      
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/about">Acerca de</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
