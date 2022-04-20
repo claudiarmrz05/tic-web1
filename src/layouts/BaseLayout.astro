@@ -11,14 +11,16 @@ const {title} = Astro.props;
     <meta name="author" content="Imanol" />
     <meta name="keywords" content="HTML, CSS, Astro" />
     <title>Ideo Flora - {title}</title>
-    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} />     
+    <style global>
+    @import "../styles/base.css";
+    </style>   
   </head>
   <body>
     <div id="header">
       <div class="container">
         <div id="logo">
           <a href="/home">
-            <img src=¨{Logo} class='logo' />
+            <img src={Logo} class="logo" />
           </a>
         </div>
         <MenuLayout></MenuLayout>        
